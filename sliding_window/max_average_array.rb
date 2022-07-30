@@ -2,7 +2,7 @@ def find_max_average(nums, k)
     window_sum = 0
     start = 0
     max_avrg = -999999999
-    for i in 0..nums.size()-1
+    for i in 0..nums.length-1
         window_sum += nums[i] # 1 -> 13 -> 8 -> 2
 
         if i - start + 1 == k
